@@ -12,10 +12,10 @@ export default function Hero() {
           loop
           playsInline
         >
-          <source src="/assets/herobg.mp4" type="video/mp4" />
+          <source src="/assets/heroBg.mp4" type="video/mp4" />
           <p className="text-white">
             Video failed to load. Check console for errors or ensure
-            /assets/herobg.mp4 exists in public folder.
+            /assets/heroBg.mp4 exists in public folder.
           </p>
         </video>
 
