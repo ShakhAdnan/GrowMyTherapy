@@ -8,7 +8,7 @@ A clean, mobile-friendly website built for the imaginary therapist **Dr. Serena 
 
 ## 🌐 Live Site
 
-👉 [Visit Website on Vercel](https://your-vercel-url.vercel.app/)  
+👉 [Visit Website on Vercel](https://grow-my-therapy-one.vercel.app/)  
 👉 [View GitHub Repo](https://github.com/ShakhAdnan/GrowMyTherapy)
 
 ---
