@@ -5,6 +5,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useRef, useState } from "react";
+import { toast } from "sonner";
 
 const contactSchema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -51,15 +52,15 @@ export default function ContactForm() {
       const result = await response.json();
 
       if (result.success) {
-        alert("Thank you for contacting us!");
+        toast.success("Thank you for contacting us!");
         reset();
         recaptchaRef.current?.reset();
       } else {
-        alert("Something went wrong. Please try again later.");
+        toast.error("Something went wrong. Please try again later.");
       }
     } catch (error) {
       console.error("Form submission error:", error);
-      alert("Something went wrong. Please try again later.");
+      toast.error("Something went wrong. Please try again later.");
     }
   };
 
